@@ -15,22 +15,6 @@ A cleaned and rebuilt Python desktop assistant based on the older `JArvis1.zip`,
 - graceful `exit` / `quit` / `stop`
 - recognition and microphone error handling
 
-## What Was Fixed
-
-The original files had several problems:
-
-- `if __name__ == "__main_"` was misspelled
-- `pyttsx3.init('sapis')` used an invalid/incorrect Windows driver name
-- the larger `Jarvis.zip` mostly contained a PyCharm starter file and an entire `venv/`
-- the original Alexa script could return an undefined `command`
-- commands were converted to lowercase but compared against mixed-case strings
-- the wake-word comparison was therefore unreliable
-- a broad empty `except` hid all errors
-- there was no clean exit command
-- the script ran forever
-- PyCharm metadata and the virtual environment were bundled with source code
-
-The rebuilt version removes those issues and keeps dependencies in `requirements.txt`.
 
 ## Requirements
 
